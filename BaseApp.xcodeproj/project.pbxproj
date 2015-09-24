@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		E73570761BB3CA3400555A28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570751BB3CA3400555A28 /* main.m */; };
-		E73570791BB3CA3400555A28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570781BB3CA3400555A28 /* AppDelegate.m */; };
-		E735707C1BB3CA3400555A28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E735707B1BB3CA3400555A28 /* ViewController.m */; };
 		E735707F1BB3CA3400555A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E735707D1BB3CA3400555A28 /* Main.storyboard */; };
 		E73570811BB3CA3400555A28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E73570801BB3CA3400555A28 /* Images.xcassets */; };
 		E73570841BB3CA3400555A28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73570821BB3CA3400555A28 /* LaunchScreen.xib */; };
 		E73570901BB3CA3400555A28 /* BaseAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E735708F1BB3CA3400555A28 /* BaseAppTests.m */; };
+		E73570A01BB3CAB000555A28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E735709D1BB3CAB000555A28 /* AppDelegate.m */; };
+		E73570A11BB3CAB000555A28 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E735709F1BB3CAB000555A28 /* HomeViewController.m */; };
+		E73570AD1BB3CC1D00555A28 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570A51BB3CC1D00555A28 /* MMDrawerBarButtonItem.m */; };
+		E73570AE1BB3CC1D00555A28 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570A81BB3CC1D00555A28 /* MMDrawerController.m */; };
+		E73570AF1BB3CC1D00555A28 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570AA1BB3CC1D00555A28 /* MMDrawerVisualState.m */; };
+		E73570B01BB3CC1D00555A28 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570AC1BB3CC1D00555A28 /* UIViewController+MMDrawerController.m */; };
+		E73570B31BB3CC8700555A28 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570B21BB3CC8700555A28 /* MenuViewController.m */; };
+		E73570B61BB3CEE800555A28 /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73570B51BB3CEE800555A28 /* ProjectViewController.m */; };
+		E73570B81BB3D21100555A28 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73570B71BB3D21100555A28 /* CaviarDreams.ttf */; };
+		E73570BA1BB3D21900555A28 /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73570B91BB3D21900555A28 /* Caviar_Dreams_Bold.ttf */; };
+		E77BA1661BB418DC00979BEB /* SideViewimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77BA1651BB418DC00979BEB /* SideViewimage.jpg */; };
+		E77BA1691BB41DE600979BEB /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = E77BA1681BB41DE600979BEB /* UIImage+ImageEffects.m */; };
+		E77BA16B1BB4259B00979BEB /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E77BA16A1BB4259B00979BEB /* images.jpeg */; };
+		E77BA16D1BB4266600979BEB /* peach.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E77BA16C1BB4266600979BEB /* peach.jpeg */; };
+		E77BA16F1BB426FD00979BEB /* peachCake.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E77BA16E1BB426FD00979BEB /* peachCake.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +43,39 @@
 		E73570701BB3CA3400555A28 /* BaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73570741BB3CA3400555A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E73570751BB3CA3400555A28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E73570771BB3CA3400555A28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E73570781BB3CA3400555A28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E735707A1BB3CA3400555A28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E735707B1BB3CA3400555A28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E735707E1BB3CA3400555A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E73570801BB3CA3400555A28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E73570831BB3CA3400555A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E73570891BB3CA3400555A28 /* BaseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E735708E1BB3CA3400555A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E735708F1BB3CA3400555A28 /* BaseAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAppTests.m; sourceTree = "<group>"; };
+		E735709C1BB3CAB000555A28 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Controller/AppDelegate.h; sourceTree = "<group>"; };
+		E735709D1BB3CAB000555A28 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Controller/AppDelegate.m; sourceTree = "<group>"; };
+		E735709E1BB3CAB000555A28 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Controller/HomeViewController.h; sourceTree = "<group>"; };
+		E735709F1BB3CAB000555A28 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Controller/HomeViewController.m; sourceTree = "<group>"; };
+		E73570A41BB3CC1D00555A28 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		E73570A51BB3CC1D00555A28 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		E73570A61BB3CC1D00555A28 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		E73570A71BB3CC1D00555A28 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		E73570A81BB3CC1D00555A28 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		E73570A91BB3CC1D00555A28 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		E73570AA1BB3CC1D00555A28 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		E73570AB1BB3CC1D00555A28 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		E73570AC1BB3CC1D00555A28 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		E73570B11BB3CC8700555A28 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Controller/MenuViewController.h; sourceTree = "<group>"; };
+		E73570B21BB3CC8700555A28 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Controller/MenuViewController.m; sourceTree = "<group>"; };
+		E73570B41BB3CEE800555A28 /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectViewController.h; path = Controller/ProjectViewController.h; sourceTree = "<group>"; };
+		E73570B51BB3CEE800555A28 /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectViewController.m; path = Controller/ProjectViewController.m; sourceTree = "<group>"; };
+		E73570B71BB3D21100555A28 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		E73570B91BB3D21900555A28 /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Caviar_Dreams_Bold.ttf; sourceTree = "<group>"; };
+		E73570BB1BB3DA0100555A28 /* BaseApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BaseApp-Prefix.pch"; path = "BaseApp/BaseApp-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E73570BC1BB3DB0C00555A28 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E77BA1651BB418DC00979BEB /* SideViewimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SideViewimage.jpg; sourceTree = "<group>"; };
+		E77BA1671BB41DE600979BEB /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		E77BA1681BB41DE600979BEB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		E77BA16A1BB4259B00979BEB /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		E77BA16C1BB4266600979BEB /* peach.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peach.jpeg; sourceTree = "<group>"; };
+		E77BA16E1BB426FD00979BEB /* peachCake.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peachCake.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +117,10 @@
 		E73570721BB3CA3400555A28 /* BaseApp */ = {
 			isa = PBXGroup;
 			children = (
-				E73570771BB3CA3400555A28 /* AppDelegate.h */,
-				E73570781BB3CA3400555A28 /* AppDelegate.m */,
-				E735707A1BB3CA3400555A28 /* ViewController.h */,
-				E735707B1BB3CA3400555A28 /* ViewController.m */,
-				E735707D1BB3CA3400555A28 /* Main.storyboard */,
+				E73570A21BB3CC1000555A28 /* Modals */,
+				E73570991BB3CA3C00555A28 /* Controller */,
+				E735709A1BB3CA4300555A28 /* Views */,
 				E73570801BB3CA3400555A28 /* Images.xcassets */,
-				E73570821BB3CA3400555A28 /* LaunchScreen.xib */,
 				E73570731BB3CA3400555A28 /* Supporting Files */,
 			);
 			path = BaseApp;
@@ -96,6 +129,13 @@
 		E73570731BB3CA3400555A28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E77BA16C1BB4266600979BEB /* peach.jpeg */,
+				E77BA16E1BB426FD00979BEB /* peachCake.jpeg */,
+				E77BA16A1BB4259B00979BEB /* images.jpeg */,
+				E77BA1651BB418DC00979BEB /* SideViewimage.jpg */,
+				E73570BB1BB3DA0100555A28 /* BaseApp-Prefix.pch */,
+				E73570B91BB3D21900555A28 /* Caviar_Dreams_Bold.ttf */,
+				E73570B71BB3D21100555A28 /* CaviarDreams.ttf */,
 				E73570741BB3CA3400555A28 /* Info.plist */,
 				E73570751BB3CA3400555A28 /* main.m */,
 			);
@@ -117,6 +157,57 @@
 				E735708E1BB3CA3400555A28 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E73570991BB3CA3C00555A28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E735709C1BB3CAB000555A28 /* AppDelegate.h */,
+				E735709D1BB3CAB000555A28 /* AppDelegate.m */,
+				E735709E1BB3CAB000555A28 /* HomeViewController.h */,
+				E735709F1BB3CAB000555A28 /* HomeViewController.m */,
+				E73570B11BB3CC8700555A28 /* MenuViewController.h */,
+				E73570B21BB3CC8700555A28 /* MenuViewController.m */,
+				E73570B41BB3CEE800555A28 /* ProjectViewController.h */,
+				E73570B51BB3CEE800555A28 /* ProjectViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E735709A1BB3CA4300555A28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E73570821BB3CA3400555A28 /* LaunchScreen.xib */,
+				E735707D1BB3CA3400555A28 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E73570A21BB3CC1000555A28 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				E77BA1671BB41DE600979BEB /* UIImage+ImageEffects.h */,
+				E77BA1681BB41DE600979BEB /* UIImage+ImageEffects.m */,
+				E73570A31BB3CC1D00555A28 /* MMDrawerController */,
+				E73570BC1BB3DB0C00555A28 /* Constants.h */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		E73570A31BB3CC1D00555A28 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				E73570A41BB3CC1D00555A28 /* MMDrawerBarButtonItem.h */,
+				E73570A51BB3CC1D00555A28 /* MMDrawerBarButtonItem.m */,
+				E73570A61BB3CC1D00555A28 /* MMDrawerController+Subclass.h */,
+				E73570A71BB3CC1D00555A28 /* MMDrawerController.h */,
+				E73570A81BB3CC1D00555A28 /* MMDrawerController.m */,
+				E73570A91BB3CC1D00555A28 /* MMDrawerVisualState.h */,
+				E73570AA1BB3CC1D00555A28 /* MMDrawerVisualState.m */,
+				E73570AB1BB3CC1D00555A28 /* UIViewController+MMDrawerController.h */,
+				E73570AC1BB3CC1D00555A28 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +292,13 @@
 			files = (
 				E735707F1BB3CA3400555A28 /* Main.storyboard in Resources */,
 				E73570841BB3CA3400555A28 /* LaunchScreen.xib in Resources */,
+				E73570BA1BB3D21900555A28 /* Caviar_Dreams_Bold.ttf in Resources */,
+				E77BA16B1BB4259B00979BEB /* images.jpeg in Resources */,
+				E73570B81BB3D21100555A28 /* CaviarDreams.ttf in Resources */,
 				E73570811BB3CA3400555A28 /* Images.xcassets in Resources */,
+				E77BA1661BB418DC00979BEB /* SideViewimage.jpg in Resources */,
+				E77BA16D1BB4266600979BEB /* peach.jpeg in Resources */,
+				E77BA16F1BB426FD00979BEB /* peachCake.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E735707C1BB3CA3400555A28 /* ViewController.m in Sources */,
-				E73570791BB3CA3400555A28 /* AppDelegate.m in Sources */,
+				E73570AF1BB3CC1D00555A28 /* MMDrawerVisualState.m in Sources */,
+				E73570A11BB3CAB000555A28 /* HomeViewController.m in Sources */,
+				E73570B01BB3CC1D00555A28 /* UIViewController+MMDrawerController.m in Sources */,
+				E73570B31BB3CC8700555A28 /* MenuViewController.m in Sources */,
+				E73570AE1BB3CC1D00555A28 /* MMDrawerController.m in Sources */,
+				E73570AD1BB3CC1D00555A28 /* MMDrawerBarButtonItem.m in Sources */,
+				E77BA1691BB41DE600979BEB /* UIImage+ImageEffects.m in Sources */,
+				E73570A01BB3CAB000555A28 /* AppDelegate.m in Sources */,
+				E73570B61BB3CEE800555A28 /* ProjectViewController.m in Sources */,
 				E73570761BB3CA3400555A28 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +392,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "BaseApp/BaseApp-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -330,6 +435,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "BaseApp/BaseApp-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -347,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "BaseApp/BaseApp-Prefix.pch";
 				INFOPLIST_FILE = BaseApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "BaseApp/BaseApp-Prefix.pch";
 				INFOPLIST_FILE = BaseApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +524,7 @@
 				E73570951BB3CA3400555A28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E73570961BB3CA3400555A28 /* Build configuration list for PBXNativeTarget "BaseAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +533,7 @@
 				E73570981BB3CA3400555A28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

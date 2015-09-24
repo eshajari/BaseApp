@@ -9,14 +9,33 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (strong,nonatomic) MMDrawerController *drawerController;
 @end
 
 @implementation AppDelegate
-
+@synthesize drawerController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    UIViewController * MenuViewController = InitViewStory_with(@"Main", @"ID_Menu");
+    UIViewController * HomeViewController = InitViewStory_with(@"Main", @"ID_Home");
+    
+    UINavigationController * HomenavigationController = [[UINavigationController alloc] initWithRootViewController:HomeViewController];
+    [HomenavigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
+    UINavigationController * MenuNavController = [[UINavigationController alloc] initWithRootViewController:MenuViewController];
+    [MenuNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:HomenavigationController
+                             leftDrawerViewController:MenuViewController];
+    [self.drawerController setShowsShadow:YES];
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+    [self.drawerController setMaximumRightDrawerWidth:200.0];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+   
+    [self.window setRootViewController:self.drawerController];
+
+    
     return YES;
 }
 
