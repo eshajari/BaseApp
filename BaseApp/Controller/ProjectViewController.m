@@ -7,9 +7,28 @@
 //
 
 #import "ProjectViewController.h"
+#include <objc/runtime.h>
+#import "DetailProjectController.h"
+
+@interface LSApplicationProxy : NSObject // LSBundleProxy <NSSecureCoding>
+@property(readonly, nonatomic) NSString *applicationDSID;
+@property(readonly, nonatomic) NSString *applicationIdentifier;
+@property(readonly, nonatomic) NSString *applicationType;
+@property(readonly, nonatomic) BOOL isContainerized;
+@property(readonly, nonatomic) NSString *shortVersionString;
+@property(readonly, nonatomic) NSMutableArray *groupIdentifiers;
+- (long)bundleModTime;
+- (id)localizedName;
+- (id)resourcesDirectoryURL;
+@end
+
+
+#define KArrProjName [NSArray arrayWithObjects:@"App List", @"Battry Life",@"Instagram",nil]
 
 @interface ProjectViewController ()
-
+{
+    NSMutableArray *ArrProjName;
+}
 @end
 
 @implementation ProjectViewController
@@ -17,19 +36,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self AddMenuButton];
-    // Do any additional setup after loading the view.
+    ArrProjName = [NSMutableArray new];
+    [ArrProjName addObjectsFromArray:KArrProjName];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 #pragma mark - TABLE VIEW
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 14;
+    return [ArrProjName count];
 }
 
 
@@ -44,8 +64,8 @@
     NSString *cellName = @"FeedCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellName forIndexPath:indexPath];
     
-//    UILabel *lblName = (UILabel*)[cell viewWithTag:2];
-//    lblName.text = @"Project Iconica"; //[ArrMenuNames objectAtIndex:indexPath.row];
+    UILabel *lblName = (UILabel*)[cell viewWithTag:3];
+    lblName.text = @"Project Iconica"; //[ArrMenuNames objectAtIndex:indexPath.row];
 //    
     
     UIView *bgView = (UIView*)[cell viewWithTag:2];
@@ -67,6 +87,28 @@
     return cell;
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+        {
+            DetailProjectController *detail = InitViewStory_with(@"Main", @"ID_DETAIL");
+            detail.arrAppList = [self GetAppInstalledList];
+            [self.navigationController pushViewController:detail animated:YES];
+        }
+            break;
+
+        case 1:
+            
+            break;
+            
+            
+        default:
+            break;
+    }
+}
+
 #pragma mark - User Methods
 
 -(void)AddMenuButton
@@ -83,5 +125,27 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
+
+-(NSMutableArray*)GetAppInstalledList
+{
+        NSMutableArray *arrApplist = [NSMutableArray new];
+        
+        Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
+        NSObject* workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+        NSArray *newarr = [[NSArray alloc] initWithObjects:[workspace performSelector:@selector(allApplications)], nil];
+    
+        NSMutableArray *currentAppArr = [NSMutableArray new];
+        [currentAppArr addObjectsFromArray:[newarr objectAtIndex:0]];
+        
+        for (LSApplicationProxy *prox  in currentAppArr) {
+            NSMutableDictionary *appDetail = [NSMutableDictionary new];
+            [appDetail setObject:prox.localizedName forKey:@"appName"];
+            [appDetail setObject:prox.applicationIdentifier forKey:@"packageName"];
+            
+            [arrApplist addObject:appDetail];
+        }
+
+    return arrApplist;
+}
 
 @end

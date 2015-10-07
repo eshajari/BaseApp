@@ -26,6 +26,11 @@
 }
 
 
+-(void)AddIntroViewForData
+{
+    
+}
+
 #pragma mark - User Methods
 
 -(void)AddMenuButton

@@ -27,7 +27,7 @@
 
 #pragma mark - APP COLOR
 
-#define App_COL_ThemeBlue [UIColor colorWithRed:230/255.0 green:100/255.0 blue:110/255.0 alpha:1.0]
+#define App_COL_ThemeBlue [UIColor colorWithRed:240/255.0 green:70/255.0 blue:70/255.0 alpha:1.0]
 
 
 #pragma mark - APP CONST
